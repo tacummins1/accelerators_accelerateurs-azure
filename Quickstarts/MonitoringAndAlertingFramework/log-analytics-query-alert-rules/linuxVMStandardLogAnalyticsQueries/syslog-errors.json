@@ -18,7 +18,7 @@
             "value": "true"
         },
         "query": {
-            "value": "Syslog\n| where SeverityLevel== \"err\"\n| where Computer==\"SubstituteVMName\""
+            "value": "Syslog\n| where SeverityLevel== \"crit\"\n| where Computer==\"SubstituteVMName\""
          },
         "queryType": {
             "value": "ResultCount"
