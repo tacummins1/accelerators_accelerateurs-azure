@@ -15,7 +15,7 @@
             "value": "canadacentral"
         },
         "isEnabled": {
-            "value": "true"
+            "value": "false"
         },
         "query": {
             "value": "Perf\n| where ObjectName  == \"SQLServer:Buffer Manager\"\n| where CounterName==\"Buffer cache hit ratio\"\n| where Computer==\"SubstituteVMName\"\n| summarize AggregatedValue = avg(CounterValue) by bin(TimeGenerated, 5m)\n"
